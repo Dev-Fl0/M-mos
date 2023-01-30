@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bout de code CSS</title>
+    <link rel="stylesheet" type="text/css" href="Design/default.css" />
+  </head>
+  <body>
+    <!-- PRESENTATION -->
+    <header>
+      <h1>Wauthier Florian | Web Developer</h1>
+      <h2>Bout de code CSS</h2>
+    </header>
+    <!-- MENU -->
+    <nav>
+      <ul>
+        <li><a href="#Sélecteurs" title="Aller à Sélecteurs">Sélecteurs</a></li>
+        <li>
+          <a href="#Lignedecommandes" title="Aller à Lignes de commandes"
+            >Lignes de commandes</a
+          >
+        </li>
+        <li>
+          <a href="#Flex" title="Aller à Flex">Flex</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- TYPES DE SELECTEURS -->
+    <section>
+      <h3 id="Sélecteurs">type de sélecteurs</h3>
+      <h4>ID:</h4>
+      <article>
+        <span>Dans un premier temps dans la balise précédent l'endroit ou l'on veux mettre l'ID:</span>
+        <pre>
+          <code>&lt;h3 id="Nom de l'ID"&gt;titre&lt;/h3&gt;</code>
+        </pre>
+        <span>Ensuite lien vers cet ID:</span>
+        <pre>
+          <code>&lt;a href="#Nom de l'ID" title="Aller à Nom de l'ID(popup au survol du lien)"&gt;Nom de l'ID&lt;/a&gt;</code>
+        </pre>
+      </article>
+      <h4>Classes:</h4>
+      <article>
+        <span>Dans un premier temps dans la balise précédent l'endroit ou l'on veux mettre la classe:</span>
+        <pre>
+          <code>&lt;h3 class="Nom de la classe"&gt;titre&lt;/h3&gt;</code>
+        </pre>
+        <span>Ensuite lien vers cette classe:</span>
+        <pre>
+          <code>&lt;a href=".Nom de la classe" title="Aller à Nom de la classe(popup au survol du lien)"&gt;Nom de la classe&lt;/a&gt;</code>
+        </pre>
+        <h4>Récapitulatif des sélecteurs:</h4>
+        <p>La sélection par la balise:<br>
+          p {}</p>
+          
+          <p>La multi-sélection:<br>
+          h1, em { } </p>
+          
+          <p>La sélection par la classe:<br>
+          .class { } </p>
+          
+          <p>La sélection par l'ID:<br>
+          #id { } </p>
+          
+          <p>Le sélecteur universel (toutes les balises):<br>
+          * { } </p>
+          
+          <p>La balise B contenue dans A:<br>
+          A B { } </p>
+          
+          <p>La balise a qui a un attribut title:<br>
+          a[title] { } </p>
+          
+          <p>La balise a qui a un attribut title qui a un valeur "Accueil":<br>
+          a[title="Accueil"] { } </p>
+          
+          <p>La balise a qui a un attribut title dont le mot "Accueil" est en tout ou partie la valeur:<br>
+          a[title*="Accueil"] { } </p>
+          <p>Toute la liste des sélecteurs <a href="https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors" title="Tous les sélecteurs" target="_blank">ici</a>.</p>
+    </section>
+    <!-- LIGNES DE COMMANDES -->
+    <section>
+      <h3 id="Lignedecommandes">Lignes de commandes:</h3>
+      <!-- FONT -->
+      <h4>Taille des polices:</h4>
+      <article>
+        <h5>Par défaut les texts sont à 16px.</h5>
+        <span>Taille absolue(ne prend pas en considération l'utilisateur et c'est en pixel):</span>
+        <p>selécteur { font-size:1px ;}</p>
+        <span>Taille relative:</span>
+        <p>sélecteur { font-size: xx-small/x-small/small/medium/large/x-large/xx-large }</p>
+        <span>Avec em(1 em = normal):</span>
+        <p>sélecteur { font size: 1em ;}</p>
+        <span>En pourcentage:</span>
+        <p>sélecteur { font-size: 1ex;}</p>
+      </article>
+      <h4>Changer la police:</h4>
+      <article>
+        <h5>En téléchargant une police:</h5>
+        <span></span>
+        <p>sélecteur { font-family: }</p>
+      </article>
+      <!-- TEXTE -->
+      <h4>Text:</h4>
+      <article></article>
+    </section>
+      <!-- FLEX -->
+    <section>
+    <h3 id="Flex">Flex:</h3>
+    </section>
+    <!-- AUTRE -->
+    <section>
+      <h3>AUTRES</h3>
+      <h4></h4>
+      <article></article>
+    </section>
+    <footer>
+      <p>2023 © Wauthier Florian</p>
+    </footer>
+  </body>
+</html>

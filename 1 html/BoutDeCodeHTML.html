@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bout de code html</title>
+    <link rel="stylesheet" type="text/css" href="Design/default.css" />
+  </head>
+  <body>
+    <!-- PRESENTATION -->
+    <header>
+      <h1>Wauthier Florian | Web Developer</h1>
+      <h2>Bout de code HTML</h2>
+    </header>
+    <!-- MENU -->
+    <nav>
+      <ul>
+        <li><a href="#bases" title="Aller à base">Bases</a></li>
+        <li>
+          <a href="#spécifications" title="Aller à spécifications"
+            >Spécifications</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- BASES -->
+    <section>
+      <h3 id="bases">Bases HTML:</h3>
+      <!-- LE SCRIPT -->
+      <h4>Script de base:</h4>
+      <article>
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=&quot;en&quot;&gt;<b>(indique la langue principale de la page pour une meilleure expérience utilisateur et une meilleure indexation,traduction, par les moteurs de recherche.)</b>
+                &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;<b>(permet d'utiliser les dernières normes de rendu pour afficher la page sur Internet Explorer pour assurer une bonne compatibilité.)</b>
+                    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<b>(permet d'adapter la taille de la page aux appareils mobiles pour une meilleure expérience utilisateur.)</b>
+                    &lt;link rel="stylesheet" type="text/css" href="lien vers la page css" /&gt;<b>(lien vers la page CSS)</b>
+                    &lt;title&gt;titre&lt;/title&gt;
+                    &lt;link
+                    href="https://fonts.googleapis.com/css2?family....." rel="stylesheet"/&gt;<b>(Lien vers les polices voir sur google fonts)</b>
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+      </article>
+    </section>
+    <!-- STRUCTURE -->
+    <section>
+      <h4>Structure:</h4>
+      <article>
+        <img src="Picture/structure.png" alt="logo" id="structure" />
+      </article>
+    </section>
+    <!-- SPECIFICATIONS -->
+    <section>
+      <h3 id="spécifications">Spécifications</h3>
+      <!-- LIENS -->
+      <h4>Liens, insertion images etc...</h4>
+      <article>
+        <h5>Inserer une image:</h5>
+        <pre>
+          <code>&lt;img src="source de l'image(../pour remonter un dossier) alt="nom de l'image en cas de non affichage"/&gt;</code>
+        </pre>
+        <span>
+          Pour ajouter une légende à un image, mettre l'image entre deux balise
+          figure et en dessous de l'image ajouter une balise figcaption ensuite
+          nom de la légende et fermer la balise figcaption.</span>
+        <h5>Lien vers une autre page:</h5>
+        <pre>
+          <code>&lt;a href="lien de la page" (mettre un popup au survol du lien) title="nom du popup"&gt;Nom du bouton&lt;/a&gt;</code>
+        </pre>
+        <h5>Lien vers un autre site</h5>
+        <pre>
+          <code>&lt;a href="lien du site"&gt;Nom du site ou du lien&lt;/a&gt;</code>
+        </pre>
+        <h5>Lien vers un nouvel onglet ou nouvelle fenêtre</h5>
+        <pre>
+          <code>&lt;a href="lien vers la page" title="Popup sur le lien au survol" target="_blank"&gt;Nom du bouton&lt/a&gt;</code>
+        </pre>
+        <h5>Lien vers une ancre</h5>
+        <pre>
+            <span>En premier temps on designe l'id du lien a l'endroit ou l'on veux qu'il aille.</span>
+
+            <code>&lt;section id="id du lien"&gt;text&lt;/section&gt;</code>
+
+            <span>ensuite on pose le lien ou l'on doit cliquer pour aller a ce lien.</span>
+
+            <code>&lt;a href="#id du lien" title="Aller à titre de l'id"&gt;titre de l'id&lt;/a&gt;</code>
+        </pre>
+        <h5>Lien pour télécharger un fichier</h5>
+        <pre>
+          <code>&lt;a href="nom du fichier"&gt;Nom du bouton&lt;/a&gt;</code>
+        </pre>
+        <h5>Lien pour envoyer directement un mail</h5>
+        <pre>
+          <code>&lt;a href="mailto:adresse mail"&gt;adresse mail&lt;/a&gt;</code>
+        </pre>
+      </article>
+    </section>
+    <footer>
+      <p>2023 © Wauthier Florian</p>
+    </footer>
+  </body>
+</html>
