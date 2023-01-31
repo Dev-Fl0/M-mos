@@ -1,5 +1,7 @@
 body {
     background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -24,14 +26,15 @@ h4 {
     text-align: left;
     text-decoration: underline;
     color: orange;
+    text-transform: uppercase;
 }
 
 h5 {
     color: orangered;
+    font-weight: bold;
 }
 
 ul {
-    text-align: center;
     padding: 0;
 }
 
@@ -42,7 +45,6 @@ li {
 
 article {
     color: white;
-    text-align: center;
 }
 
 span {
@@ -50,8 +52,11 @@ span {
     font-weight: bold;
 }
 
+p {
+    color: white;
+}
+
 footer {
     color: silver;
-    text-align: center;
     font-weight: bold;
 }

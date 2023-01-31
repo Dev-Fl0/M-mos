@@ -97,12 +97,88 @@
       <h4>Changer la police:</h4>
       <article>
         <h5>En téléchargant une police:</h5>
-        <span></span>
-        <p>sélecteur { font-family: }</p>
+        <span>Sur dafont(à mettre dans le dossier src et déclarer sur CSS):</span>
+        <p>@font-face { font-family: 'nom de la police'; src: url('../src/nom de la police') format('truetype';)}</p>
+        <p>sélecteur { font-family: nom de la police, autre police , sans-serif; }</p>
+        <h5>Depuis un url:</h5>
+        <span>Depuis google fonts(séléctioner les polices et copier l'url et déclarer sur la page html dans le head):</span>
+        <p> sélecteur { font-family: 'nom de la police' , autre police , sans-serif ; }</p>
       </article>
-      <!-- TEXTE -->
-      <h4>Text:</h4>
-      <article></article>
+      <!-- FORME -->
+      <h4>FORME:</h4>
+      <article>
+        <h5>En majuscules:</h5>
+        <p>sélecteur { text-transform: uppercase; }</p>
+        <h5>En gras:</h5>
+        <p>sélecteur { font-weight: bold; }</p>
+        <h5>En italique:</h5>
+        <p>sélecteur { font-style: italic; }</p>
+        <h5>Souligner:</h5>
+        <p>sélecteur { text-decoration: underline; }</p>
+        <h5>Enlever la décoration des liens:</h5>
+        <p>sélecteur(a) { text-decoration: none; }</p>
+      </article>
+      <!-- MISE EN PAGE -->
+      <h4>MISE EN PAGE:</h4>
+      <article>
+      <H5>Alignement:</H5>
+      <p>sélecteur { text-align: center, right, justify; }</p>
+      <h5>Aligner une liste:</h5>
+      <span>Vérifier le padding sur la console de google(inspecter):</span>
+      <p> sélecteur { padding: 0; }</p>
+      <h5>Enlever les point des listes</h5>
+      <span>Voir plusieurs styles <a href="https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type" target="_blank">ici</a>:</span>
+      <p>sélecteur(li) { list-style-type: none; }</p>
+      <p>Mettre des chiffres:<br>
+      li { list-style-type: decimal; }</p>
+      <p>Mettre des chiffres romains:<br>
+      li { list-style-type: upper-roman ou lower-roman; }</p>
+        <p>Mettre des cercles vide:<br>
+        li { list-style-type: circle; }</p>
+      </article>
+      <!-- LES FLOTANTS -->
+      <h4>LES FLOTANTS:</h4>
+      <article>
+        <h5>Rendre l'image ignorée par le text:</h5>
+        <p>sélecteur(logo) { float: left, right; }</p>
+        <h5>Stoper un élément flotant:</h5>
+        <span>Il doit avoir la même valeur que le flotant:</span>
+        <p>sélecteur { clear: left, right, both; }</p>
+      </article>
+      <!-- MODIFIER LA COULEUR -->
+      <h4>Modifier la couleur des éléments et fond d'écran:</h4>
+      <article>
+        <h5>Mettre en couleur le fond de la page:</h5>
+        <span>Couleurs par défaut:</span>
+        <p>sélecteur(body) { background-color: couleur; }</p>
+        <span>Avec une transparence:</span>
+        <p>sélecteur(body) { background-color: rgba(0, 0, 0, 0); }</p>
+        <h5>Mettre un fond d'ecran</h5>
+        <p>body { background-img: url('lien de l'image'); }</p>
+        <h5>Réglages du fond d'écran:</h5>
+        <p>Le fond d'écran bouge en descendant:<br>
+        body { background-attachment: scroll; }</p>
+        <p>Le fond d'écran ne bouge pas c'est le texte qui bouge:<br>
+        body { background-attachment: fixed; }</p>
+        <h5>Répetition du fond d'écran:</h5>
+        <p>Le fond d'écran est répété:<br>
+        body { background-repeat: repeat; }</p>
+        <p>Le fond d'écran n'est pas répété:<br>
+        body { background-repeat: no-repeat; }</p>
+        <p>Le fond d'écran est répété sur l'axe y ou x:<br>
+        body { background-repeat: repeat-y, repeat-x; }</p>
+        <h5>Position du fond d'écran:</h5>
+        <p>Positionnement en pixel:<br>
+        body { background-position: repeat; 100px 100px; }</p>
+        <p>Positionnement en adjectifs:<br>
+        body { background-position: bottom/top/center, bottom left/rigth/center, }</p>
+        <h5>En une seule propriété:</h5>
+        <p>body { background: url('lien du background') no repeat center center; }</p>
+        <h5>Plusieurs fond d'écrans:</h5>
+        <p>body { background: url('lien du background') no repeat center center, url('lien du background') fixed no repeat center center; }</p>
+      </article>
+      <!-- TRANSPARENCE -->
+      <h4>Transparence:</h4>
     </section>
       <!-- FLEX -->
     <section>
